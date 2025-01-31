@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Boostrap head-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
      <!-- Tipográfia Montserrat-->
      <link rel="stylesheet" href="https://use.typekit.net/cql0euk.css">
 
@@ -18,65 +21,131 @@
 </head>
 <body>
     <header>
-        <a href="../index.html">
-            <img src="../img/logo-negro1-muzan.png" alt="logotipo mi web">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="acerca-de.html">Acerca de</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="trayectoria.html">Trayectoria</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            
-        </nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img class="logo-header-boostrap" src="../img/logo-negro1-muzan.png" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./trayectoria.html">Trayectoria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./acerca-de.html">Acerca de</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./galeria.html">Galería</a>
+                  </li>
+                </ul>
+                <div>
+                    <a class="btn btn-dark rounded-1 btn-md" href="./contacto.html" role="button">Contacto</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
 
-    <main>
-        <!--Para quien lo revise: No se si es importante anidar etiquetas div dentro de main, por eso solo lo hice en este archivo html-->
-        <div>
-            <span class="resalte">TRAYECTORIA ÚNICA</span>
-            <h1>Un legado en construcción La trayectoria de un visionario</h1>
-            <p>A lo largo de su carrera, Muzan Kibutsuji ha dejado una huella imborrable en la industria de la moda. Sus colaboraciones con diseñadores de renombre como Karl Lagerfeld y Marc Jacobs han dado como resultado campañas publicitarias icónicas que han marcado tendencia.</p>
-            <p>Además, ha trabajado con las modelos más cotizadas de la actualidad, capturando su belleza y personalidad de una manera única. Sus editoriales de moda para revistas como Vogue, Elle y Harper's Bazaar son un testimonio de su talento y creatividad.</p>
-            <img src="../img/muzan-perfil-mano-bolsa.jpg" alt="">
+    <main class="tr-main">
+        <div class="tr-main__container-grid">
+            <div class="tr-main__container-img">
+                <img class="tr-main__img" src="../img/88-Popular-and-color.jpg" alt="">
+            </div>
+            <div class="tr-main__container-img">
+                <img class="tr-main__img" src="../img/modelo-vestido-blanco-y-lentes.jpg" alt="">
+            </div>
+            <div class="tr-main__container-img">
+                <img class="tr-main__img" src="../img/modelo-sentado-pensativo.jpg" alt="">
+            </div>
+        </div>
+        <div class="tr-main__container-flex">
+            <div class="tr-main__container-title">
+                <span class="resalte">TRAYECTORIA ÚNICA</span>
+                <h1>Un legado en construcción:<br/> La trayectoria de un visionario</h1>
+            </div>
+            <div class="tr-main__container-content">
+                <div class="tr-main__text">
+                    <p>A lo largo de su carrera, Muzan Kibutsuji ha dejado una huella imborrable en la industria de la moda. Sus colaboraciones con diseñadores de renombre como Karl Lagerfeld y Marc Jacobs han dado como resultado campañas publicitarias icónicas que han marcado tendencia.</p>
+                    <p>Además, ha trabajado con las modelos más cotizadas de la actualidad, capturando su belleza y personalidad de una manera única. Sus editoriales de moda para revistas como Vogue, Elle y Harper's Bazaar son un testimonio de su talento y creatividad.</p>
+                </div>
+                <div class="tr-main__container-img-dos">
+                    <img class="tr-main__img" src="../img/muzan-perfil-mano-bolsa.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
 
-            <h2>Desde Nagoya al mundo: El ascenso de un fotógrafo icónico</h2>
-            <img src="../img/muzan-sentado-movil-mano.jpg" alt="">
-            <img src="../img/muzan-ejecutivo-edificio.jpg" alt="">
 
-            <p class="texto-negrita">2007-2014: Los inicios en Japón</p>
-            <ul>
-                <li>2007: Primera exposición individual en una pequeña galería de arte en Nagoya</li>
-                <li>2009: Participación en el Tokyo Youth Photography Festival</li>
-                <li>2012: Colaboración con diseñadores emergentes en la Semana de la Moda de Tokio</li>
-            </ul>
-            
-            <p class="texto-negrita">2015-2019: El salto a la escena internacional</p>
-            <ul>
-                <li>2015: Primera exposición individual en Nueva York, recibiendo excelentes críticas de la prensa especializada.</li>
-                <li>2016: Ganador del premio "Fotógrafo del Año" en los International Photography Awards</li>
-                <li>2017: Colaboración con Vogue Italia para una serie de editoriales de moda.</li>
-                <li>2018: Participación en el Festival de Cannes, documentando los eventos más exclusivos.</li>
-            </ul>
-
-            <p class="texto-negritas">2020-Presente: Consolidando su legado</p>
-            <ul>
-                <li>2020: Exposición retrospectiva en el Centro de Fotografía de París.</li>
-                <li>2021: Juez en el concurso de fotografía de belleza "Miss Universe"</li>
-                <li>2022: Colaboración con marcas de lujo como Chanel y Dior para campañas publicitarias a nivel mundial.</li>
-                <li>2023: Publicación de su primer libro de fotografía, "Visiones de Belleza".</li>
-            </ul>
-
+    <section class="tr-section-uno">
+        <div class="tr-section-uno__container-title">
+            <h2>Desde Nagoya al mundo:<br/> El ascenso de un fotógrafo icónico</h2>
+        </div>
+        <div class="tr-section-uno__container-content">
+            <div class="tr-section-uno__container-img">
+                <div>
+                    <img class="tr-main__img" src="../img/muzan-sentado-movil-mano.jpg" alt="">
+                </div>
+            </div>
+            <div class="tr-section-uno__container-trayectoria">
+                <div class="tr-section-uno__bullets">
+                    <p class="texto-negrita">2007-2014: Los inicios en Japón</p>
+                    <ul>
+                        <li class="tr-section-uno__li">2007: Primera exposición individual en una pequeña galería de arte en Nagoya</li>
+                        <li class="tr-section-uno__li">2009: Participación en el <b>Tokyo Youth Photography Festival</b></li>
+                        <li class="tr-section-uno__li">2012: Colaboración con diseñadores emergentes en la <b>Semana de la Moda de Tokio</b></li>
+                    </ul>
+                </div>
+                <div class="tr-section-uno__bullets">
+                    <p class="texto-negrita">2015-2019: El salto a la escena internacional</p>
+                    <ul>
+                        <li class="tr-section-uno__li">2015: Primera exposición individual en Nueva York, recibiendo excelentes críticas de la prensa especializada.</li>
+                        <li class="tr-section-uno__li">2016: Ganador del premio <b>"Fotógrafo del Año"</b> en los International Photography Awards</li>
+                        <li class="tr-section-uno__li">2017: Colaboración con <b>Vogue Italia</b> para una serie de editoriales de moda.</li>
+                        <li class="tr-section-uno__li">2018: Participación en el <b>Festival de Cannes</b>, documentando los eventos más exclusivos.</li>
+                    </ul>
+                </div>
+                <div class="tr-section-uno__bullets">
+                    <p class="texto-negrita">2020-Presente: Consolidando su legado</p>
+                    <ul>
+                        <li class="tr-section-uno__li">2020: Exposición retrospectiva en el Centro de Fotografía de París.</li>
+                        <li class="tr-section-uno__li">2021: Juez en el concurso de fotografía de belleza <b>"Miss Universe"</b></li>
+                        <li class="tr-section-uno__li">2022: Colaboración con marcas de lujo como <b>Chanel y Dior</b> para campañas publicitarias a nivel mundial.</li>
+                        <li class="tr-section-uno__li">2023: Publicación de su primer libro de fotografía, <b>"Visiones de Belleza"</b>.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-    </main>    
+    </section>    
 
         <!--Aqui va el pie de pagina-->
     <footer>
-        <p>&copy; 2025 Mi empresa - Todos los derechos reservados - Aviso de privacidad</p>
+        <div class="footer__container-logo">
+            <img class="footer__logo" src="../img/logo-claro1-muzan.png" alt="">
+            <span class="footer__slogan">Muzan Kibutsuji Studio</span>
+        </div>
+        <div class="footer__container-nav">
+            <nav class="footer__nav">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./acerca-de.html">Acerca de</a></li>
+                    <li><a href="./galeria.html">Galería</a></li>
+                    <li><a href="./trayectoria.html">Trayectoria</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__container-copyright">
+            <p class="footer__copyright">&copy; 2025 Muzan Kibutsuji Studio - Todos los derechos reservados - Aviso de privacidad</p>
+        </div>
     </footer>
-
+    <!-- Boostrap body -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
