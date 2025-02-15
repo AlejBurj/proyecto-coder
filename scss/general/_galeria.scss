@@ -1,0 +1,154 @@
+//import variables
+@import "../Utilidades/variables";
+
+//import mixin
+@import "../Utilidades/mixin";
+
+/*Estilos de galeria desktop*/
+
+.main-galeria__container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @include margin-vertical(50px, 50px);
+}
+
+.main-galeria__container--sesenta{
+    width: 60%;
+}
+
+.main-galeria__container--cuarenta{
+    width: 40%;
+    justify-content: flex-end;
+}
+
+.gl-section-uno{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    @include padding-lateral;
+    margin-bottom: 200px;
+}
+
+.gl-section-uno__container{
+    @include alto-ancho(48%, 90vh);
+}
+
+.gl-section-uno__img{
+    @include imagenes;
+}
+
+.gl-section-uno__container--ancho-completo{
+    @include flex-vertical;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.gl-section-uno__container-video{
+    @include alto-ancho(100%, 90vh);
+    margin-bottom: 20px;
+}
+
+.video-uno{
+    @include imagenes;
+}
+
+.gl-section-uno__text{
+    text-align: end;
+    padding-left: 50%;
+}
+
+.gl-section-dos{
+    @include grid(grid, 1fr 1fr 1fr, auto 1fr);
+    @include padding-lateral;
+    margin-top: 2em;
+    gap: 1em;
+}
+
+.gl-section-dos__container{
+    height: 60vh;
+}
+
+.gl-section-dos__container-text{
+    @include flex-vertical;
+    justify-content: flex-end;
+}
+
+.gl-section-dos__text{
+    text-align: end;
+}
+
+.gl-section-dos__container--cien-vh{
+    height: 100vh;
+    grid-column: span 1.5;
+}
+
+.gl-section-dos__img{
+    @include imagenes;
+}
+
+.gl-section-tres{
+    @include flex-vertical;
+    @include padding-lateral;
+    @include margin-vertical(20px, 20px);
+    gap: 20px;
+}
+
+.gl-section-tres__container{
+    display: flex;
+    gap: 20px;
+}
+
+.gl-section-tres__container--abajo{
+    padding-left: 50%;
+    justify-content: flex-end;
+}
+
+.gl-section-tres__container-img{
+    width: 25%;
+}
+
+.gl-section-tres__container-text{
+    @include flex-vertical;
+    justify-content: end;
+    width: 50%;
+}
+
+.gl-section-tres__img{
+    @include imagenes;
+}
+
+.gl-section-cuatro{
+    @include grid(grid, repeat(4, 1fr), 1fr auto 1fr);
+    @include padding-lateral;
+    gap: 20px;
+}
+
+.gl-section-cuatro__container-img-uno{
+    grid-column: span 2 / span 2;
+    height: 100vh;
+}
+
+.gl-section-cuatro__container-img-dos{
+    grid-column: span 2 / span 2;
+    grid-column-start: 3;
+    height: 100vh;
+}
+
+.gl-section-cuatro__container-text{
+    grid-column: span 4 / span 4;
+    grid-row-start: 2;
+    @include padding-vertical(20px, 30px);
+    padding-right: 50%;
+}
+
+.gl-section-cuatro__container-img{
+    grid-row-start: 3;
+    height: 70vh;
+}
+
+.gl-section-cuatro__img{
+    @include imagenes;
+}
+

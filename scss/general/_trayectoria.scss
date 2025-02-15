@@ -1,0 +1,73 @@
+//import variables
+@import "../Utilidades/variables";
+
+//import mixin
+@import "../Utilidades/mixin";
+
+/*Estilos de trayectoria desktop*/
+
+.tr-main{
+    @include flex-vertical;
+    padding: 0px;
+}
+
+.tr-main__container-grid{
+    @include grid(grid, repeat(3, 1fr), repeat(1, 1fr));
+    margin-bottom: 100px;
+}
+
+.tr-main__container-img{
+    height: 100vh;
+}
+
+.tr-main__img{
+    @include imagenes;
+}
+
+.tr-main__container-flex{
+    @include flex-vertical;
+    @include padding-lateral;
+}
+
+.tr-main__container-content{
+    display: flex;
+    gap: 10%;
+    margin-top: 80px;
+}
+
+.tr-main__text{
+    width: 60%;
+}
+
+.tr-main__container-img-dos{
+    @include alto-ancho(40%, 80vh);
+}
+
+.tr-section-uno{
+    @include flex-vertical;
+    @include padding-lateral;
+    @include margin-vertical(100px, 100px);
+}
+
+.tr-section-uno__container-content{
+    display: flex;
+    gap: 15%;
+    margin-top: 80px;
+}
+
+.tr-section-uno__container-img{
+    @include flex-vertical;
+    width: 40%;
+    gap: 20px;
+}
+
+.tr-section-uno__container-trayectoria{
+    @include flex-vertical;
+    width: 60%;
+    gap: 20px;
+}
+
+.tr-section-uno__li{
+    margin-bottom: 15px;
+    color: #595959;
+}

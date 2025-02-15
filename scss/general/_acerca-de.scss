@@ -1,0 +1,57 @@
+//import variables
+@import "../Utilidades/variables";
+
+//import mixin
+@import "../Utilidades/mixin";
+
+/*Estilos de trayectoria desktop*/
+
+.ac-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10%;
+    @include padding-lateral;
+    @include margin-vertical(20px, 100px);
+    padding-top: 0px;
+}
+
+.ac-main__container{
+    @include flex-vertical;
+    justify-content: center;
+    width: 60%;
+}
+
+.ac-main__title{
+    margin-bottom: 35px;
+    margin-right: -35%;
+    z-index: 2;
+}
+
+.ac-main__container-text{
+    @include flex-vertical;
+    gap: 20px;
+}
+
+.ac-main__container-img{
+    @include alto-ancho(40%, 90vh);
+}
+
+.ac-main__img{
+    @include imagenes;
+}
+
+.ac-section-uno__container-img{
+    @include alto-ancho(45%, 90vh);
+}
+
+.ac-section-uno__container-content{
+    @include flex-vertical;
+    align-items: flex-start;
+    width: 55%;
+    gap: 20px;
+}
+
+.ac-section-uno__text{
+    margin-bottom: 30px;
+}

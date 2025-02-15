@@ -1,0 +1,153 @@
+//import variables
+@import "../Utilidades/variables";
+
+//import mixin
+@import "../Utilidades/mixin";
+
+/*================================================ MEDIA QUERy PARA TABLET ================================================*/
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+   /*GENERAL*/
+
+   h1{
+      font-size: 60px;
+   }
+   p{
+      font-size: 18px;
+  }
+
+    /*HOME*/
+    .section-uno__container{
+        height: 60vh;
+    }
+
+    .section-dos__container{
+        height: 50vh;
+    }
+
+    .section-tres{
+        @include flex-vertical;
+
+    }
+
+    .section-tres__container{
+        width: 100%;
+    }
+
+    .section-tres__container--img{
+        width: 100%;
+        align-items: center;
+    }
+
+     /* TRAYECTORIA */
+
+     .tr-main__container-img{
+        height: 60vh;
+     }
+
+     .tr-main__container-content{
+        align-items: center;
+     }
+
+     .tr-main__container-img-dos{
+        height: 50vh;
+     }
+
+     .tr-section-uno__container-content{
+        flex-direction: column;
+        align-items: center;
+     }
+
+     .tr-section-uno__container-trayectoria{
+        width: 100%;
+     }
+
+     .tr-section-uno__container-img{
+        width: 70%;
+        margin-bottom: 50px;
+     }
+
+     /* ACERCA DE */
+
+     .ac-main{
+        flex-direction: column;
+        align-items: center;
+     }
+
+     .ac-main__container{
+        width: 100%;
+     }
+
+     .ac-main__title{
+        margin-right: 0px;
+     }
+
+     .ac-main__container-img{
+        @include alto-ancho(70%, 50vh);
+        margin-top: 50px;
+     }
+
+     .ac-section-uno{
+        flex-direction: row;
+     }
+
+     .ac-section-uno__container-img{
+        @include alto-ancho(40%, 50vh);
+     }
+
+     /* GALERÍA */
+
+     .gl-section-uno{
+        margin-bottom: 100px;
+     }
+
+     .gl-section-uno__container{
+        height: 50vh;
+     }
+
+     .gl-section-uno__text{
+        padding-left: 25%;
+     }
+
+     .gl-section-dos__container{
+         height: 40vh;
+     }
+
+     .gl-section-cuatro{
+      @include grid(grid, repeat(4, 1fr), auto auto 1fr);
+      margin-bottom: 50px;
+     }
+
+     .gl-section-cuatro__container-img-uno, .gl-section-cuatro__container-img-dos{
+      height: 50vh;
+     }
+
+     .gl-section-cuatro__container-img{
+      height: 30vh;
+     }
+
+     /*Contacto*/
+     .cont-main{
+      @include flex-vertical;
+     }
+
+     .cont-main__container{
+      width: 100%;
+      padding-right: 0px;
+     }
+
+     .cont-main__title{
+      margin-right: 0px;
+     }
+
+     .cont-main__container-form{
+      margin-top: 50px;
+     }
+
+     .cont-main__container-img{
+      width: 100%;
+      margin-top: 50px;
+     }
+
+}

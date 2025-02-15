@@ -1,0 +1,42 @@
+//import variables
+@import "../Utilidades/variables";
+
+//import mixin
+@import "../Utilidades/mixin";
+
+/*Estilos de contacto desktop*/
+
+.cont-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include padding-vertical(50PX, 50PX);
+    @include padding-lateral;
+}
+
+.cont-main__container{
+    @include flex-vertical;
+    width: 50%;
+    padding-right: 10%;
+}
+
+.cont-main__title{
+    margin-right: -70%;
+    margin-bottom: 50px;
+    z-index: 5;
+}
+
+.cont-main__container-form{
+    background-color: #d4d4d4;
+    padding: 34px;
+    border-radius: 8px;
+}
+
+.cont-main__container-img{
+    width: 50%;
+}
+
+.cont-main__img{
+    @include imagenes;
+    object-position: center;
+}

@@ -1,0 +1,86 @@
+//import de variables
+@import "../Utilidades/variables";
+
+//import mixin
+@import "../Utilidades/mixin";
+
+/* Reseteo */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales*/
+
+body {
+    background-color: $color-fondo;
+    font-family: $font-dos;
+}
+
+h1{
+    font-family: $font-uno;
+    @include fonts(80px,400,1em);
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: $font-uno;
+    @include fonts(70px,400,1em);
+}
+
+h3{
+    font-family: $font-dos;
+    @include fonts(40px,400,1em);
+    color: $subtitulo-gris;
+}
+
+p{
+    font-family: $font-dos;
+    @include fonts(16px,400,1.4em);
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: $color-texto;
+}
+
+.resalte{
+    font-family: $font-dos;
+    @include fonts(20px,400,1em);
+    color: #AFAFAF;
+    border-left: 5px solid #ff0000;
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+.h1-especial{
+    font-family: $font-uno;
+    @include fonts(6em,400,1.1em);
+    text-transform: uppercase;
+}
+
+.texto-negrita{
+    font-family: $font-dos;
+    @include fonts(25px,600,1em);
+    color: #202020;
+    margin-bottom: 35px;
+}
+
+.btn-uno{
+    border-right: 10px solid #ff0000;
+    box-shadow: 12px 12px 25px 0px rgba(0, 0, 0, 0.20);
+}
+
+/*Estilos header con boostrap*/
+
+.navbar{
+    border-bottom: 1px solid #B3B3B3;
+}
+
+.logo-header-boostrap{
+    width: 50px;
+}
+
+.btn{
+    text-transform: uppercase;
+}
